@@ -92,11 +92,13 @@ function setInformation(){
 }
 
 function setMainBackground(){
-  getElement('background-image').style.backgroundImage = 'url(https://i.imgur.com/kbcB9As.jpeg';
+  getElement('background-image').style.backgroundImage = 'url(https://i.imgur.com/kbcB9As.jpeg)';
+  // fixed potential errors with background url( => url()
 }
 
 function checkStormMusic(){
-  if(currentCondition.toLowerCase().includes("storm")){
+  checkMusic = currentCondition.toLowerCase();
+  if(checkMusic.includes("storm") || checkMusic.includes("severe")){
     music= new Audio("assets/music/storm.wav");
   }
 }
