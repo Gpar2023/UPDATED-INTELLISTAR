@@ -1,6 +1,6 @@
 var zipCode;
 var cityName;
-
+let checkMusic;
 var longitude;
 var latitude;
 
