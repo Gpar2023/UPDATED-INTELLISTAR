@@ -204,7 +204,7 @@ function executePage(pageIndex, subPageIndex){
   if(currentSubPageName == "current-page"){
     setTimeout(loadCC, 1000);
     setTimeout(scrollCC, currentSubPageDuration / 2);
-    animateValue('cc-temperature-text', -50, `${currentTemperature}`, 2500, 1);
+    animateValue('cc-temperature-text', -50, currentTemperature, 2500, 1);
     animateDialFill('cc-dial-color', currentTemperature, 2500);
   }
   else if(currentSubPageName == 'radar-page'){
